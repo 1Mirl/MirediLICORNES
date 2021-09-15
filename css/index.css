@@ -1,70 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: lightcyan;
 }
+header h2{
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+    color: white;
+    background-color: pink;
+}
+nav{
+    position: absolute;
+    top: 25px; right: 180px;
+}
+nav a{
+    font-weight: bold;
+    color: white;
+}
 h2{
     font-family: 'Italianno', cursive;
+    font-weight: bold;
+    color: pink;
+}
+.arc h3{
+    font-family: 'Italianno', cursive;
+    color: pink;
+    text-align: center;
+    font-size: 2.5em;
 }
 .arc{
-    height: 20px;
-    background-image: url(../img/unnamed.png);
-}
-div .img{
-    display: flex;
+    width: 80%;
     margin: auto;
-    justify-content: center;
+    background: center 10px no-repeat url(../img/unnamed.png);
+    height: 200px;
+}
+#conteneur{
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    height: 780px;
+    border-radius: 10px;
+    border: 1px solid lightcoral;
+    
+}
+.photo{
+    width: 800px;
 }
 figure{
-    width: 10%;
+    width: auto;
+    float: left;
+    margin-left: 5%;
+}
+img{
+    width: 120px;
 }
 figcaption {
     opacity: 0.8;
-    background-color: orange;
+    background-color: black;
+    text-align: center;
+    color: white;
     height: 10%;
     /*ici, pour faire monter le texte*/
     position: relative;
-    bottom: 23px;
-}
-.rose-leger{
-    background-color: pink;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    /*Passage à la ligne des éléments pour que la largeur des col soit respectée*/
-    flex-wrap: nowrap;
-    row-gap: 5px;
-    margin-bottom: 5px ;
-}
-.col-3 {
-    width: 25%;
-    padding: 5px;
-}
-.marge-6 {
-    margin-left: 50%;
+    bottom: 22px;
 }
 main{
     width: 1000px;
     margin: auto;
     background-image: url(../img/bcgunnamed.png);
 }
-#conteneur{
-    background-color: #fff;
-    margin: auto;
-    width: 80%;
-    height: auto;
-}
 .plan{
-    margin: auto;
-    display: flex;
-    column-gap: 2;
+    columns: 2 auto;
 }
 iframe {
-    border: 1px solid black;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 320px;
+    margin: auto;
 }
 .contact{
     width: 300px;
+    margin: auto;
 }
+.contact h4{
+    font-size: 1.5em;
+    font-family: 'Italianno', cursive;
+    color: pink;
+}
+footer{
+    background-color: pink;
+    text-align: right;
+    /*color: white;*/
+}
+

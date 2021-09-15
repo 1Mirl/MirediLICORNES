@@ -14,15 +14,15 @@
 </head>
 <body>
     <main>
-        <div id="en-tête" class="row rose-leger">
-            <header class="col-3">
+        <div>
+            <header>
                 <h2>Mylicornes</h2>
-            </header>
-                <nav class="marge-6 col-3">
+                <nav>
                     <a href="#">LE PRINCIPE</a>
                     <a href="#">NOS LICENCES</a>
                     <a href="#">NOUS TROUVER</a>
                 </nav>
+            </header>
         </div>
 
         <section class="arc">
@@ -36,9 +36,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque blanditiis doloribus, rem quae facilis earum iusto optio obcaecati quis expedita tenetur reiciendis sequi placeat nisi hic dolorum sapiente error!</p>
             </div>
 
-            <div>
+            <div class="photo">
                 <h2><i class="far fa-star">Nos licornes</i></h2>
-                <section class="img">
+                <section>
                     <figure>
                         <img src="img/unnamed1.jpg" alt="belle image">
                         <figcaption>Lulu Confetty</figcaption>
@@ -72,20 +72,20 @@
                             <em>01 23 45 67 89</em>
                         </address>
                         <h4>Newsletter</h4>
-                        <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
-                        <form action="">
-                            <label for="meeting-time">Choose a time for your appointment:</label>
-
+                        <form action="inscription.php" method="POST">
+                            <label for="meeting-time">Abonnez-vous simplement à notre newsletter mensuelle !</label>
+                            <br>
                             <input type="mail" id="mail"
-                                name="mail" value="votre@mail.fr">
-                            <input type="valide" id="valide" name="valide" value="valide">
+                                name="mail" placeholder="votre@mail.fr">
+                                <br>
+                            <input type="submit" value="valide">
                         </form>
                     </section>
                 </section>
             </div>
         </div>
         <footer>
-            <p>Mylicornes</p>
+            <p>2021 &copy; Colombbus</p>
         </footer>
     </main>
     
