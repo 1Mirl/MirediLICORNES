@@ -1,0 +1,100 @@
+
+/* styles pour les licornes pisola */
+
+/* font-family: 'Courgette', cursive; */
+
+body {
+    background-image: url(../../img/background.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*les couleurs passées dans des variables*/
+:root {
+    --rose-sombre : #c55394;
+    --rose-clair : #EB43A3;
+	--rose : #E577B5;
+	--noir : #333;
+    --blanc :#FFF;
+    --noir_alpha : rgba(109, 109, 109, 0.9);
+}
+/*les couleurs en variable*/
+.rose{
+    background-color: pink;
+}
+.vert{
+    background-color: green;
+}
+/*le conteneur principal*/
+main {
+width: 900px;
+margin: 0 auto;
+background-color: skyblue;
+}
+/*les classes pour le flex*/
+.d-flex{
+    display: flex;
+}
+.jc-space-between {
+    justify-content: space-between;
+}
+.jc-space-around{
+    justify-content: space-around;
+}
+.ai-center{
+    align-items: center;
+}
+/* gouttière pour les éléments enfant d'un élément d-flex */
+.g-15{
+    gap: 15px
+}
+.g-20{
+    gap:20px
+}
+/*marges intérieurs*/
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+/*les titres*/
+h1{
+    padding: 70px;
+    text-align: center;
+    font-family: 'Courgette' , cursive;
+    color: var(--rose-sombre);
+    /*background-image: url(../../img/rainbow.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top; */
+
+    background: url(../../img/rainbow.png) no-repeat center top;
+    margin-bottom: 0;
+}
+h2, h3, h4, h5, h6 {
+    color: var(--rose-clair);
+    font-family: 'Courgette' , cursive;
+}
+/*en-tête*/
+header{
+    background-color: var(--rose-sombre);
+    height: 50px;
+}
+header > *{
+    color: var(--blanc);
+}
+header > nav > a{
+    display: inline-block;
+    color: var(--blanc);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header > nav > a:hover{
+    background-color: var(--rose-clair);
+}
+/*les galeries d'image*/
+.img-200{
+    width: 200px;
+}
+figure{
+    margin: 0;
+}
